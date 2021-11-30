@@ -30,10 +30,10 @@ public class Quotes {
 
     String getRandomeQuote(){
         String quote;
-        int quoteArryLen, randomNum ;
+        int quoteArryLength, randomNum ;
 
-        quoteArryLen= getQuotes().length;
-        randomNum = ThreadLocalRandom.current().nextInt(quoteArryLen);
+        quoteArryLength= getQuotes().length;
+        randomNum = ThreadLocalRandom.current().nextInt(quoteArryLength);
         quote = getQuotes()[randomNum];
         return quote;
     }
